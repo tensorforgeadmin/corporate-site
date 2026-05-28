@@ -26,10 +26,10 @@
         /* Ambient background glow to mimic the logo's internal lighting */
         .ambient-glow {
             position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(249, 115, 22, 0.06) 0%, rgba(0,0,0,0) 70%);
-            top: 40%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.07) 0%, rgba(0,0,0,0) 70%);
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
@@ -48,23 +48,13 @@
             opacity: 0;
         }
 
-        /* Logo styling ensuring perfectly sharp scaling */
+        /* Scaled up the logo to stand out as the primary header element */
         .logo {
-            width: 200px;
+            width: 420px;
             height: auto;
-            max-width: 60%;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.5));
-        }
-
-        /* Typography sizing & layouts */
-        h1 {
-            color: #ffffff;
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.05em;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+            max-width: 100%;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.6));
         }
 
         .subtitle {
@@ -75,7 +65,7 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             margin-top: 0;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         p {
@@ -127,9 +117,8 @@
     <div class="ambient-glow"></div>
 
     <div class="container">
-        <img src="studio-logo.png" alt="Tensor Forge Interactive Logo" class="logo">
+        <img src="studio-logo.png" alt="Tensor Forge Interactive" class="logo">
         
-        <h1>Tensor Forge Interactive</h1>
         <p class="subtitle">Independent Video Game Production Studio</p>
         
         <p>Tensor Forge Interactive is an independent studio dedicated to the engineering, production, and publishing of high-performance interactive entertainment experiences.</p>
